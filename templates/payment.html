@@ -1,0 +1,186 @@
+            {% extends 'base.html' %}
+			
+			{% load static %}
+			
+			{% block title %}
+			Buy | Ticket
+			
+			{% endblock title %}
+			
+			{% block content  %}
+			<!-- header end-->
+			<main class="main">
+				<!-- promo start-->
+				<section class="promo-primary">
+					<picture>
+						<source srcset="{%static './img/elements.jpg'%}" media="(min-width: 992px)"/><img class="img--bg" src="{%static './img/elements.jpg'%}" alt="img"/>
+					</picture>
+					<div class="container">
+						<div class="row">
+							<div class="col-auto">
+								<div class="align-container">
+									<div class="align-container__item"><span class="promo-primary__pre-title">Mukuvisi</span>
+										<h1 class="promo-primary__title"><span>Ticket</span> <span>Checkout</span></h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- promo end-->
+				<!-- section start-->
+				<section class="section checkout">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<!-- checkout start-->
+								<form class="form checkout-form" action="javascript:void(0);">
+									<div class="row">
+										<div class="col-lg-7 col-xl-8">
+											<div class="checkout__wrapper">
+												<div class="form__fieldset">
+													<h6 class="form__title">Personal Information</h6>
+													<div class="row offset-30">
+														<div class="col-md-6">
+															<input class="form__field" type="text" name="first-name" placeholder="First Name"/>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="text" name="last-name" placeholder="Last Name"/>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="tel" name="phone-number" placeholder="Phone"/>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="email" name="email" placeholder="Email"/>
+														</div>
+													</div>
+												</div>
+												<div class="form__fieldset">
+													<h6 class="form__title">Payment Method</h6>
+													<div class="row offset-30">
+														<div class="col-12">
+															<div class="form__payments">
+																<label class="form__radio-label"><img class="form__label-img" src="{%static './img/paypal.png'%}" alt="paypal"/>
+																	<input class="form__input-radio" type="radio" name="method-select" value="paypal"/><span class="form__radio-mask form__radio-mask"></span>
+																</label>
+																<label class="form__radio-label"><img class="form__label-img" src="{%static './img/klarna.png'%}" alt="klarna"/>
+																	<input class="form__input-radio" type="radio" name="method-select" value="klarna"/><span class="form__radio-mask form__radio-mask"></span>
+																</label>
+																<label class="form__radio-label"><img class="form__label-img" src="{%static './img/visa.png'%}" alt="visa"/>
+																	<input class="form__input-radio" type="radio" name="method-select" value="visa" checked="checked"/><span class="form__radio-mask form__radio-mask"></span>
+																</label>
+															</div>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="text" name="first-name" placeholder="First Name"/>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="text" name="last-name" placeholder="Last Name"/>
+														</div>
+														<div class="col-12">
+															<div class="row">
+																<div class="col-xl-6">
+																	<input class="form__field" type="number" name="card-number" placeholder="Card Number"/>
+																</div>
+																<div class="col-xl-6">
+																	<div class="row">
+																		<div class="col-md-4">
+																			<select class="form__select" name="month-select">
+																				<option value="value">MM</option>
+																				<option value="value2">Value 2</option>
+																				<option value="value3">Value 3</option>
+																				<option value="value3">Value 4</option>
+																				<option value="value3">Value 5</option>
+																			</select>
+																		</div>
+																		<div class="col-md-4">
+																			<select class="form__select" name="year-select">
+																				<option value="value">YY</option>
+																				<option value="value2">Value 2</option>
+																				<option value="value3">Value 3</option>
+																				<option value="value3">Value 4</option>
+																				<option value="value3">Value 5</option>
+																			</select>
+																		</div>
+																		<div class="col-md-4">
+																			<input class="form__field" type="text" name="cvv" placeholder="CVV"/>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form__fieldset no-margin-bottom">
+													<h6 class="form__title">Shipping Information</h6>
+													<div class="row offset-30">
+														<div class="col-12">
+															<input class="form__field" type="text" name="adress" placeholder="Adress Line 1"/>
+														</div>
+														<div class="col-md-6">
+															<select class="form__select" name="state-select">
+																<option value="value">State</option>
+																<option value="value2">Value 2</option>
+																<option value="value3">Value 3</option>
+															</select>
+														</div>
+														<div class="col-md-6">
+															<select class="form__select" name="country-select">
+																<option value="value">Country</option>
+																<option value="value2">Value 2</option>
+																<option value="value3">Value 3</option>
+															</select>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="text" name="city" placeholder="City"/>
+														</div>
+														<div class="col-md-6">
+															<input class="form__field" type="text" name="zip" placeholder="Zip"/>
+														</div>
+														<div class="col-12">
+															<select class="form__select" name="shipping-select">
+																<option value="value">Choose shipping method</option>
+																<option value="value2">Value 2</option>
+																<option value="value3">Value 3</option>
+															</select>
+														</div>
+														<div class="col-12">
+															<textarea class="form__field form__message" name="message" placeholder="Comment"></textarea>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-5 col-xl-4">
+											<div class="checkout__wrapper">
+												<div class="form__fieldset">
+													<h6 class="form__title">Order Summary</h6>
+													
+													
+													
+												</div>
+												<div class="form__fieldset no-margin-bottom">
+													<div class="cart-totals">
+														<h6 class="form__title">Cart Total</h6>
+														<ul class="cart-totals__list">
+															<li><span>Subtotal:</span><span>146 USD</span></li>
+															<li><span>Sale:</span><span>16 USD</span></li>
+															<li><span>Total:</span><span>130 USD</span></li>
+														</ul>
+														<button class="form__submit" type="submit">Checkout</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<!-- checkout end-->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+			</main>
+			
+			{% endblock content %}
+			
